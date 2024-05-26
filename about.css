@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeIn 2s forwards; /* Apply fade-in animation */
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff69b4;
+}
+
+main {
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section, .fresh-flowers {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.flower-image-1, .flower-image-2 {
+  max-width: 25%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.about-text-container, .fresh-text-container {
+  max-width: 800px;
+  text-align: center;
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeIn 2s forwards; /* Apply fade-in animation */
+}
+
+.about-heading, .fresh-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text, .fresh-text {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start from opacity 0 */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+  }
+}
